@@ -155,7 +155,7 @@ You can start the CloudWatch agent using either Systems Manager Run Command or t
 
 1. In the **Mode** list, choose **onPremise**\.
 
-1. In the **Optional Configuration Location** box, enter the name of the agent configuration file that you created with the wizard and stored in the Parameter Store\.
+1. In the **Optional Configuration Location** box, enter the name of the agent configuration file that you created with the [wizard](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-cloudwatch-agent-configuration-file-wizard.html) and stored in the Parameter Store\.
 
 1. Choose **Run**\.
 
