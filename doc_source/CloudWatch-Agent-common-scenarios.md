@@ -24,9 +24,9 @@ If you're already running the agent with the root user and want to change to usi
 1. Create a new Linux user or use the default user named `cwagent` that the RPM or DEB file created\.
 
 1. Provide credentials for this user in one of these ways:
-   + If the file `.aws/credentials` exists in the home directory of the root user, you must create a credentials file for the user you are going to use to run the CloudWatch agent\. This credentials file will be `/home/username/.aws/credentials`\. Then set the value of the `shared_credential_file` parameter in `common-config.toml` to the pathname of the credential file\. For more information, see [\(Optional\) Modify the Common Configuration for Proxy or Region Information](install-CloudWatch-Agent-commandline-fleet.md#CloudWatch-Agent-profile-instance-first)\.
+   + If the file `.aws/credentials` exists in the home directory of the root user, you must create a credentials file for the user you are going to use to run the CloudWatch agent\. This credentials file will be `/home/username/.aws/credentials`\. Then set the value of the `shared_credential_file` parameter in `common-config.toml` to the pathname of the credential file\. For more information, see [\(Optional\) Modify the Common Configuration for Proxy or Region Information](line-fleet.md#CloudWatch-Agent-profile-instance-first)\.
    + If the file `.aws/credentials` does not exist in the home directory of the root user, you can do one of the following:
-     + Create a credentials file for the user you are going to use to run the CloudWatch agent\. This credentials file will be `/home/username/.aws/credentials`\. Then set the value of the `shared_credential_file` parameter in `common-config.toml` to the pathname of the credential file\. For more information, see [\(Optional\) Modify the Common Configuration for Proxy or Region Information](install-CloudWatch-Agent-commandline-fleet.md#CloudWatch-Agent-profile-instance-first)\.
+     + Create a credentials file for the user you are going to use to run the CloudWatch agent\. This credentials file will be `/home/username/.aws/credentials`\. Then set the value of the `shared_credential_file` parameter in `common-config.toml` to the pathname of the credential file\. For more information, see [\(Optional\) Modify the Common Configuration for Proxy or Region Information](line-fleet.md#CloudWatch-Agent-profile-instance-first)\.
      + Instead of creating a credentials file, attach an IAM role to the instance\. The agent uses this role as the credential provider\.
 
 1. In the CloudWatch agent configuration file, add the following line in the `agent` section:
@@ -53,7 +53,7 @@ If you're already running the agent with the root user and want to change to usi
 
 1. Store the credentials of this user to a path that the user can access, such as `/home/username/.aws/credentials`\.
 
-1. Set the value of the `shared_credential_file` parameter in `common-config.toml` to the pathname of the credential file\. For more information, see [\(Optional\) Modify the Common Configuration for Proxy or Region Information](install-CloudWatch-Agent-commandline-fleet.md#CloudWatch-Agent-profile-instance-first)\.
+1. Set the value of the `shared_credential_file` parameter in `common-config.toml` to the pathname of the credential file\. For more information, see [\(Optional\) Modify the Common Configuration for Proxy or Region Information](line-fleet.md#CloudWatch-Agent-profile-instance-first)\.
 
 1. In the CloudWatch agent configuration file, add the following line in the `agent` section:
 

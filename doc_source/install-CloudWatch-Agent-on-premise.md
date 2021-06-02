@@ -170,7 +170,7 @@ You can start the CloudWatch agent using either Systems Manager Run Command or t
   sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m onPremise -s -c ssm:configuration-parameter-store-name
   ```
 
-  Linux: If you saved the configuration file on the local computer, enter the following command\. Replace *configuration\-file\-path* with the path to the agent configuration file\. This file is called `config.json` if you created it with the wizard, and might be called `amazon-cloudwatch-agent.json` if you created it manually\.
+  Linux: If you saved the configuration file on the local computer, enter the following command\. Replace *configuration\-file\-path* with the path to the agent configuration file\. This file is called `config.json` if you created it with the [wizard](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-cloudwatch-agent-configuration-file-wizard.html), and might be called `amazon-cloudwatch-agent.json` if you created it manually\.
 
   ```
   sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m onPremise -s -c file:configuration-file-path

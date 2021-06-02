@@ -176,7 +176,7 @@ Follow these steps to use the command line to start the CloudWatch agent on a se
 
 1. In this command, `-a fetch-config` causes the agent to load the latest version of the CloudWatch agent configuration file, and `-s` starts the agent\.
 
-   Enter one of the following commands\. Replace *configuration\-file\-path* with the path to the agent configuration file\. This file is called `config.json` if you created it with the wizard, and might be called `amazon-cloudwatch-agent.json` if you created it manually\.
+   Enter one of the following commands\. Replace *configuration\-file\-path* with the path to the agent configuration file\. This file is called `config.json` if you created it with the [wizard](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-cloudwatch-agent-configuration-file-wizard.html), and might be called `amazon-cloudwatch-agent.json` if you created it manually\.
 
    On an EC2 instance running Linux, enter the following command\. 
 
